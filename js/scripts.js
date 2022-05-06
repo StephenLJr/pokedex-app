@@ -9,3 +9,11 @@ let pokemonList = [
     {name: 'Wartortle', height: 1, type: 'water'},
     {name: 'Blastoise', height: 1.6, type: 'water'},
 ];
+
+for (let i = 0; i < pokemonList.length; i++) {
+    if (pokemonList[i].height > 1.6) { //highlighting large pokemon
+        document.write('<p class="large">' + <strong>pokemonList[i].name</strong>, '(height: ' = pokemonList[i].height + ')-Wow, that\’s big!</p>')
+    } else{
+        document.write('<p>' + <strong>pokemonList[i].name)</strong>, '(height: ' + pokemonList[i].height + ')</p>')
+    }
+}
