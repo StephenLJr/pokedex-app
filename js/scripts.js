@@ -12,8 +12,11 @@ let pokemonList = [
 
 for (let i = 0; i < pokemonList.length; i++) {
     if (pokemonList[i].height > 1.6) { //highlighting large pokemon
-        document.write('<p class="large">' + <strong>pokemonList[i].name</strong>, '(height: ' = pokemonList[i].height + ')-Wow, that\'s big!</p>')
-    } else{
-        document.write('<p>' + <strong>pokemonList[i].name)</strong>, '(height: ' + pokemonList[i].height + ')</p>')
+        document.write('<p class="large">' + pokemonList[i].name, '(height: ' + pokemonList[i].height + ')-Wow, that\'s big!</p>')
+    } else if (pokemonList[i].height < 0.6) { //highlighting small pokemon
+        document.write('<p class="small">' + pokemonList[i].name, '(height: ' + pokemonList[i].height + ')-Wow, that\'s tiny!</p>')
+    }
+    else{
+        document.write('<p>' + pokemonList[i].name), '(height: ' + pokemonList[i].height + ')</p>')
     }
 }
