@@ -10,7 +10,7 @@ let pokemonList = [
     {name: 'Blastoise', height: 1.6, type: 'water'},
 ]
 
-for (let i = 0; i < pokemonList.length; i++) {
+pokemonList.forEach(function(user) {
     if (pokemonList[i].height > 1.7) { //highlighting large pokemon
         document.write('<p class="large">' + '<strong>' + pokemonList[i].name + '</strong>' +  ', (height: ' + pokemonList[i].height + ')-Wow, that\’s big!</p>')
     } else if (pokemonList[i].height < 0.6) { //highlighting small pokemon
@@ -18,7 +18,7 @@ for (let i = 0; i < pokemonList.length; i++) {
     } else{
         document.write('<p>' + '<strong>' + pokemonList[i].name + '</strong>' + ', (height: ' + pokemonList[i].height + ')</p>')
     }
-}
+});
 function divide(dividend, divisor){
     if(divisor === 0){
         return "You're trying to divide by zero."
