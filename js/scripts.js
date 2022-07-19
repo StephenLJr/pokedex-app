@@ -10,13 +10,13 @@ let pokemonList = [
     {name: 'Blastoise', height: 1.6, type: 'water'},
 ]
 
-pokemonList.forEach(function(user) {
-    if (pokemonList[i].height > 1.7) { //highlighting large pokemon
-        document.write('<p class="large">' + '<strong>' + pokemonList[i].name + '</strong>' +  ', (height: ' + pokemonList[i].height + ')-Wow, that\’s big!</p>')
-    } else if (pokemonList[i].height < 0.6) { //highlighting small pokemon
-        document.write('<p class="small">' + '<strong>' + pokemonList[i].name + '</strong>' + ', (height: ' + pokemonList[i].height + ')-Wow, that\'s tiny!</p>')
+pokemonList.forEach(function(pokemon) {
+    if (pokemon.height > 1.7) { //highlighting large pokemon
+        document.write('<p class="large">' + '<strong>' + pokemon.name + '</strong>' +  ', (height: ' + pokemon.height + ')-Wow, that\’s big!</p>')
+    } else if (pokemon.height < 0.6) { //highlighting small pokemon
+        document.write('<p class="small">' + '<strong>' + pokemon.name + '</strong>' + ', (height: ' + pokemon.height + ')-Wow, that\'s tiny!</p>')
     } else{
-        document.write('<p>' + '<strong>' + pokemonList[i].name + '</strong>' + ', (height: ' + pokemonList[i].height + ')</p>')
+        document.write('<p>' + '<strong>' + pokemon.name + '</strong>' + ', (height: ' + pokemon.height + ')</p>')
     }
 });
 function divide(dividend, divisor){
