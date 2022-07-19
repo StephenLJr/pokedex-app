@@ -33,12 +33,11 @@ let pokemonRepository = (function () {
     };
 })();
 
-console.log(pokemonRepository.getAll());
+
 pokemonRepository.add({
     name: 'Caterpie', height: 0.3, type: 'bug'});
-    console.log(pokemonRepository.getAll());
-
-pokemonList.forEach(function(pokemon) {
+   
+pokemonRepository.getAll().forEach(function(pokemon) {
     if (pokemon.height > 1.7) { //highlighting large pokemon
         document.write('<p class="large">' + '<strong>' + pokemon.name + '</strong>' +  ', (height: ' + pokemon.height + ')-Wow, that\’s big!</p>')
     } else if (pokemon.height < 0.6) { //highlighting small pokemon
