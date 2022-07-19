@@ -35,10 +35,9 @@ let pokemonRepository = (function () {
 
 
 pokemonRepository.add({
-    name: 'Caterpie', height: 0.3, type: 'bug'},
-    {name: 'Metapod', height: 0.7, type: 'bug'},
-    {name: 'Butterfree', height: 1.1, type: ['bug', 'flying']}
-    );
+    name: 'Caterpie', height: 0.3, type: 'bug'});
+pokemonRepository.add({name: 'Metapod', height: 0.7, type: 'bug'});
+    pokemonRepository.add({name: 'Butterfree', height: 1.1, type: ['bug', 'flying']});
    
 pokemonRepository.getAll().forEach(function(pokemon) {
     if (pokemon.height > 1.7) { //highlighting large pokemon
