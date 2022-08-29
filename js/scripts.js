@@ -47,7 +47,9 @@ pokemonRepository.add({
     name: 'Caterpie', height: 0.3, type: 'bug'});
 pokemonRepository.add({name: 'Metapod', height: 0.7, type: 'bug'});
     pokemonRepository.add({name: 'Butterfree', height: 1.1, type: ['bug', 'flying']});
-   
+
+console.log(pokemonRepository.getAll());
+
 pokemonRepository.getAll().forEach(function(pokemon) {
     pokemonRepository.addListItem(pokemon);
 });
